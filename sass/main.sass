@@ -1,0 +1,108 @@
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  font-family: 'Arial', sans-serif
+
+html
+  font-size: 62.5%
+
+body
+  font-size: 1.6rem
+  min-height: 100vh
+
+  display: flex
+  flex-direction: column
+
+  background-color: #bbb
+
+ul
+  list-style: none
+
+a
+  text-decoration: none
+  color: inherit
+
+img
+  max-width: 100%
+  height: auto
+  display: block
+
+button
+  border: none
+  background: transparent
+
+footer
+  display: flex
+  flex-wrap: wrap
+  gap: 40px 20px
+
+  margin-top: auto
+  padding: 60px 10%
+
+  background-color: #2d2e33
+
+  > *
+    flex: 1 1 150px
+
+  .column
+    h2
+      position: relative
+      margin-bottom: 30px
+
+      font-weight: 400
+      font-size: 2.2rem
+      color: #f1bc0d
+      text-transform: capitalize
+
+      &::before
+        content: ""
+        display: inline-block
+        width: 40px
+        height: 2px
+        background-color: #27c0ac
+
+        position: absolute
+        bottom: -5px
+        left: 0
+
+    ul li
+      a
+        display: block
+
+        font-size: 1.9rem
+        text-transform: capitalize
+        color: #bdb6b6
+
+        transition: .4s
+
+        &:hover
+          color: #fff
+          padding-left: 2px
+
+      &:not(:last-child)
+        margin-bottom: 10px
+
+  .links
+    a
+      display: inline-block
+      height: 44px
+      width: 44px
+      border-radius: 50%
+      color: white
+      text-align: center
+      line-height: 44px
+      background-color: rgba(40, 130, 214, .8)
+      margin: 0 8px 8px 0
+
+      transition: .4s
+
+      &:hover
+        color: #4d4f55
+        background-color: #fff
+
+@media screen and (max-width: 768px)
+  footer
+    .column
+      h2::before
+        all: unset
